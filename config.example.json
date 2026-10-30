@@ -1,0 +1,21 @@
+{
+  "commandPrefix": "!",
+  "botName": "Your bot's username",
+  "streamerName": "Your Username",
+  "streamerPCSpecs": "Your PC Specs",
+  "rules": "Rules: 1. Your 1st rule 2. Your 2nd Rule 3. Your 3rd rule ect.",
+  "ttsEnabled": false,
+  "ttsVoice": null,
+  "ttsRate": 1.0,
+  "xpPerMessage": 1,
+  "pointsInterval": 1,
+  "pointsPerMin": 5,
+  "activePeriod": 5,
+  "isCoinflipActive": true,
+  "minimumGamble": 1,
+  "chatOverlay": true,
+  "ttsOverlay": true,
+  "textFilePath": "./tts.txt",
+  "clientId": "YOUR_CLIENT_ID",
+  "clientSecret": "YOUR_CLIENT_SECRET"
+}

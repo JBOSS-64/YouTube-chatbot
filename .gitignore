@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Sensitive Config & Tokens
+config.json
+bot-tokens.json
+tokens.json
+
+# Local Data / Runtime Files
+viewer-data.json
+tts.txt
+
+# OS Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background: transparent;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Outer chat container */
+#chat {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 1000px;
+    background: transparent;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column-reverse; /* Show from bottom up */
+}
+
+.message {
+    align-self: flex-start;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    animation: popIn 0.3s ease forwards;
+}
+
+#purple-flash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(72, 0, 90);
+    opacity: 0;
+    pointer-events: none; /* Don't block mouse clicks */
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+}
+
+#chat::-webkit-scrollbar {
+    display: none;
+}
+
+#tts {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    color: yellow;
+    pointer-events: none; /* Let clicks pass through */
+}
+
+.tts-message {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: fadeInOut 5s ease forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.8); }
+    10% { opacity: 1; transform: scale(1); }
+    90% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.8); }
+}
+
+@keyframes popIn {
+    0% {
+    opacity: 0;
+    transform: scale(0.8);
+    }
+    100% {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
